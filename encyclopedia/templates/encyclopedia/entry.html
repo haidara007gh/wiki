@@ -1,0 +1,9 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block body %}
+    {{html | safe}}
+    <div id = 'editlink'>
+        [<a href="{% url 'edit' title  %}">Edit</a>]
+    </div>
+{% endblock %}
+
